@@ -20,3 +20,4 @@ function displayPassOrFail() {
     console.log(Message);
   }
 }
+displayPassOrFail();

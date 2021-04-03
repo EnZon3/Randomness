@@ -14,5 +14,19 @@
   <script>
   const header = document.querySelector('header');
   const section = document.querySelector('section');
+  let requestURL = 'https://api.jsonbin.io/b/605a75c5bdc46b7369741bc3';
+  let request = new XMLHttpRequest();
+  request.open('GET', requestURL);
+  request.responseType = 'json';
+  request.send();
+  request.onload = function() {
+    const questions = request.response;
+    populateHeader(questions);
+    showQuestion(questions);
+    function populateHeader(obj) {
+
+    }
+  }
+
   </script>
  <h1>This is a test chapter to test certain functions of the site. This is not an actual chapter</h1>

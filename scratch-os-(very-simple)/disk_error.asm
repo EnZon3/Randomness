@@ -20,4 +20,4 @@ mov bx , DISK_ERROR_MSG
 call print_string
 jmp $
 ; Variables
-DISK_ERROR_MSG db " Disk read error !" , 0
+DISK_ERROR_MSG db " Disk read error." , 0

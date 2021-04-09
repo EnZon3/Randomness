@@ -11,8 +11,7 @@ mov al, 'i'
 int 0x10
 mov al, 'n'
 int 0x10
-mov al, ''
-int 0x10
+
 
 jmp $
 

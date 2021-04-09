@@ -22,3 +22,13 @@ jmp $ ; the simplest loop ever tbh
 %include "print_hex.asm"
 %include "disk_load.asm"
 ; some of our cool disk load functions!
+
+; Variables
+BOOT_DRIVE: db 0
+
+; padding don't forget lol
+times 510-($-$$) db 0
+dw 0xaa55
+
+times 256 dw 0xdada
+times 256 dw 0xface

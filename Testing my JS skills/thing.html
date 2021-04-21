@@ -9,8 +9,15 @@
   <p id="map2"</p>
     </body>
 <script>
+  var defaultMap1 = "010000000"
+  var defaultMap2 = "000000000"
   var button = document.createElement("button");
   button.innerHTML = "Move to Map2"
   var body = document.getElementsByTagName('body')[0];
-  
+  body.appendChild(button);
+  button.addEventListener ("click", function() {
+    defaultMap2 = defaultMap1
+    defaultMap1 = "000000000"
+  });
+  document.getElementById("map").innerHTML = defaultMap1;
 </script>
